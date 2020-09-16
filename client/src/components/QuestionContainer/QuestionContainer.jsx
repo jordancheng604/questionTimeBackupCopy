@@ -25,7 +25,7 @@ class QuestionContainer extends React.Component {
 
     getQuestion = () => {
         Axios
-        .get('http://localhost:8080/play')
+        .get('https://questtime.herokuapp.com/play')
         .then(res => {
             this.setState({questions: [...this.state.questions,res.data]})
         })
